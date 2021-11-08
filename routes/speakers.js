@@ -1,9 +1,8 @@
 const express = require('express');
-// const SpeakerService = require("../services/SpeakerService");
 
 const router = express.Router();
 
-module.exports = (params) => {
+module.exports = params => {
   const { speakersService } = params;
 
   router.get('/', async (request, response) => {

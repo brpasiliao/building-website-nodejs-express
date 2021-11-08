@@ -12,6 +12,8 @@ const routes = require('./routes');
 
 const app = express();
 
+app.locals.siteName = 'ROUX Academy';
+
 const port = 3000;
 
 app.set('trust proxy', 1);
@@ -49,5 +51,5 @@ app.use(
 );
 
 app.listen(port, () => {
-  console.log('Express server listening on port ${port}!');
+  console.log(`Express server listening on port ${port}!`);
 });
